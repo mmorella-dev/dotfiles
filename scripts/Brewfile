@@ -1,0 +1,56 @@
+tap "homebrew/core"
+tap "homebrew/bundle"
+
+# Fish shell and prompt
+brew "fish"
+brew "starship"
+
+tap "homebrew/cask"
+brew "ack"
+brew "exa"
+brew "git"
+brew "git-lfs"
+brew "svn"
+
+# GNU Utils
+brew "coreutils"
+brew "findutils"
+brew "gnu-sed" # Replace builtin `sed` with GNU Sed
+brew "stow"
+
+# GnuPG for PGP-signing to enable commits
+brew "gnupg"
+
+# Just for fun
+brew "cmatrix"
+brew "cowsay"
+brew "figlet"
+brew "fortune"
+brew "lolcat"
+brew "neofetch"
+brew "neovim"
+brew "node"
+brew "screenfetch"
+brew "shellcheck"
+brew "toilet"
+brew "tree"
+brew "vbindiff"
+
+# Programs I use
+cask "deezer"
+cask "discord"
+cask "firefox"
+cask "google-drive"
+cask "iterm2"
+cask "the-unarchiver"
+cask "typora"
+cask "visual-studio-code"
+cask "vlc"
+
+# Hacker Fonts
+tap "homebrew/cask-fonts"
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-hack"
+cask "font-hasklig"
+cask "font-monoid"

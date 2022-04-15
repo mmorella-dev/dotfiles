@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 # Check if Homebrew is already installed.
-command -v brew &> /dev/null;
-
 if ! command -v brew &> /dev/null && [ "$(uname)" == "Darwin" ]; then
   read -rp "Homebrew is not currently installed. Would you like to install it? (y/n) " -n 1;
   if [[ $REPLY =~ ^[Yy]$ ]]; then
@@ -10,7 +8,7 @@ if ! command -v brew &> /dev/null && [ "$(uname)" == "Darwin" ]; then
     echo "Attempting to install Command Line Tools..."
     xcode-select --install
     echo "Attempting to install Homebrew..."
-    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
     exit 1
   else
     echo "Exiting..."
@@ -58,6 +56,7 @@ brew install cowsay toilet figlet lolcat fortune cmatrix neofetch
 # Install other useful binaries.
 brew install ack
 brew install git git-lfs neovim npm vbindiff
+brew install svn
 
 # Remove outdated formulae.
 brew cleanup
