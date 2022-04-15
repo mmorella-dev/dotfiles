@@ -27,6 +27,9 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
+# Install GNU Stow
+brew install stow
+
 # Install fish shell
 brew install fish
 
