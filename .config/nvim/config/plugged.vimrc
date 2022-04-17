@@ -5,6 +5,6 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif                                                                                                                                 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
