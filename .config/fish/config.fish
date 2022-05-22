@@ -41,13 +41,18 @@ end
 # ====================
 
 # Coreutils and findutils
-set -g fish_user_paths "/usr/local/opt/coreutils/libexec/gnubin" $fish_user_paths
-set -g fish_user_paths "/usr/local/opt/findutils/libexec/gnubin" $fish_user_paths
+fish_add_path -g "/usr/local/opt/coreutils/libexec/gnubin"
+fish_add_path -g "/usr/local/opt/findutils/libexec/gnubin"
 
 # Go tools
+# ========
 if command -q go
-  set -g fish_user_paths (go env GOPATH)/bin $fish_user_paths
+  fish_add_path -g (go env GOPATH)/bin
 end
+
+# Cargo
+# =====
+fish_add_path -g "$HOME/.cargo/bin"
 
 # pyenv init
 # ==========
