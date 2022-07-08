@@ -173,8 +173,8 @@ echo 'Hibernation Mode: On charger, copy RAM to disk as backup.'
 #     failure (RAM remains powered)
 # 25: Store RAM on disk and depower memory (improves battery life at the cost
 #     of slower sleep/wake time)
-sudo pmset -b hibernatemode 25
-sudo pmset -c hibernatemode 3
+sudo pmset -b hibernatemode 3
+sudo pmset -c hibernatemode 0
 
 echo '###############################################################################'
 echo '# Screen                                                                      #'
