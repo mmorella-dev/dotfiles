@@ -27,4 +27,6 @@ if command -q brew
     abbr -a -g cs 'brew search --casks'
     abbr -a -g csd 'brew search --casks --desc'
     abbr -a -g cis 'brew install --cask'
+    abbr -a -g bou 'brew outdated'
+    abbr -a -g cou 'brew outdated --cask'
 end
