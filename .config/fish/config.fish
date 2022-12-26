@@ -69,3 +69,8 @@ end
 # Attempt to load SSH keys from macOS Keychain
 # ============================================
 ssh-add --apple-load-keychain &> /dev/null
+
+# Conda initialize
+if test -e /opt/homebrew/Caskroom/miniconda/base/bin/conda
+  eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
+end
