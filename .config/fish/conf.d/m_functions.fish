@@ -9,6 +9,7 @@ function __is_wsl -d "Returns with exit status 0 if the invoking shell is WSL"
 end
 
 # My functions
+##############
 
 function mkd -w "mkdir" -d "Make directory and cd into it."
     mkdir -p $argv; and cd $argv[-1]
@@ -49,9 +50,9 @@ function tre -w "tree" -d "Pretty 'tree' with sensible defaults."
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst $argv | less -FRNX
 end
 
-__is_macos; or exit # detect system is macOS, or stop here
 
 #### MACOS ONLY FUNCTIONS ####
+__is_macos; or exit # detect system is macOS, or stop here
 
 function cdf --description 'Open the directory of the topmost Finder window. `cdf -p` prints this path instead.'
     set -l finder_dir (osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')

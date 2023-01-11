@@ -6,19 +6,17 @@ end
 
 # emacs games (just for fun)
 if command -q emacs
-    alias emacs_snake="emacs -f snake"
-    alias emacs_pong="emacs -f pong"
-    alias emacs_tetris="emacs -f tetris"
-    alias emacs_bubbles="emacs -f bubbles"
+    alias snake="emacs -f snake"
+    alias pong="emacs -f pong"
+    alias tetris="emacs -f tetris"
+    alias bubbles="emacs -f bubbles"
 end
 
-# neofetch shortcuts
-alias lionfetch="neofetch --config $HOME/.config/neofetch/lionfetch.conf"
-alias cyberfetch="neofetch --config $HOME/.config/neofetch/cyberfetch.conf"
-
-# macOS directory shortcuts
-abbr -a -g dt '~/Desktop'
-abbr -a -g gd '~/Google\ Drive'
+if command -q neofetch
+  # neofetch shortcuts
+  alias lionfetch="neofetch --config $HOME/.config/neofetch/lionfetch.conf"
+  alias cyberfetch="neofetch --config $HOME/.config/neofetch/cyberfetch.conf"
+end
 
 # kill all background jobs
 abbr -a -g killj 'kill (jobs -p)'
