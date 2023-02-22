@@ -156,9 +156,9 @@ echo 'Machine sleep delay (3 hours)'
 sudo pmset -c sleep 180
 sudo pmset -b sleep 15
 
-echo 'Set display sleep to 10 mins on battery'
+echo 'Set display sleep to 5 mins on battery'
 sudo pmset -c displaysleep 30
-sudo pmset -b displaysleep 10
+sudo pmset -b displaysleep 5
 
 echo 'Set standby delay to 1 hours.'
 sudo pmset -a standbydelay 3600 #seconds
@@ -166,15 +166,15 @@ sudo pmset -a standbydelay 3600 #seconds
 echo 'Computer Sleep Mode: After 3 hours.'
 sudo systemsetup -setcomputersleep 180 > /dev/null
 
-echo 'Hibernation Mode: On battery, load RAM on disk to save power.'
-echo 'Hibernation Mode: On charger, copy RAM to disk as backup.'
+# echo 'Hibernation Mode: On battery, load RAM on disk to save power.'
+# echo 'Hibernation Mode: On charger, copy RAM to disk as backup.'
 #  0: Disable hibernation (speeds up sleep and wake times)
 #  3: Copy RAM to disk, so system state can be restored in case of power
 #     failure (RAM remains powered)
 # 25: Store RAM on disk and depower memory (improves battery life at the cost
 #     of slower sleep/wake time)
-sudo pmset -b hibernatemode 3
-sudo pmset -c hibernatemode 0
+# sudo pmset -b hibernatemode 3
+# sudo pmset -c hibernatemode 0
 
 echo '###############################################################################'
 echo '# Screen                                                                      #'
