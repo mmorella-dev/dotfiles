@@ -27,7 +27,7 @@ defaults write NSGlobalDomain AppleHighlightColor -string "0.968627 0.831373 1.0
 defaults write NSGlobalDomain AppleAccentColor -int 5
 
 echo 'Set Appearance to Dark.'
-defaults write NSGLobalDomain AppleInterfaceStyle -string "Dark"
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 
 echo 'Set sidebar icon size to Medium.'
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
