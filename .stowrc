@@ -1,2 +1,2 @@
---target=~
---dotfiles
+-t ~
+-d ~/.dotfiles/
