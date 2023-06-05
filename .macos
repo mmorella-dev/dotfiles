@@ -103,11 +103,14 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 try 'Disable the “Are you sure you want to open this application?” dialog' \
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-try 'Display ASCII control characters using caret notation in standard text views 
-Try e.g. `cd /tmp; unidecode "\x{0000}" > cc.txt; open -e cc.txt`' \
+try 'Display ASCII control characters using caret notation in standard text views e.g. `cd /tmp; unidecode "\x{0000}" > cc.txt; open -e cc.txt`' \
 defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
 
-# try "Disable Resume system-wide" defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+try "Disable Resume system-wide" \
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+# This works, although the checkbox will still appear to be checked. \
+try 'Disable the "reopen windows when logging back in" option' \
+defaults write com.apple.loginwindow TALLogoutSavesState -bool false;
 # try "Disable automatic termination of inactive apps" defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 # try "Disable the crash reporter" defaults write com.apple.CrashReporter DialogType -string "none"
 
