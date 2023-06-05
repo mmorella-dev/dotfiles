@@ -74,3 +74,6 @@ ssh-add --apple-load-keychain &> /dev/null
 if test -e /opt/homebrew/Caskroom/miniconda/base/bin/conda
   eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
 end
+
+## GPG
+export GPG_TTY=$(tty)
