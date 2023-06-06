@@ -1,9 +1,9 @@
 # morellam-dev / dotfiles 
 macOS and Linux dotfiles, managed with GNU Stow.
 
-## Usage on macOS
+## macOS Quick Start
 
-1. Install Xcode Command Line Tools (needed for Git and Homebrew to work)
+1. Install Command Line Tools (needed for Git and Homebrew)
    ```sh
    xcode-select --install
    ```
