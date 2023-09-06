@@ -1522,13 +1522,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.38431373238563538</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.70731707317073156</real>
+				<real>0.27843138575553894</real>
 				<key>Red Component</key>
-				<real>0.68292682926829262</real>
+				<real>0.26666668057441711</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -2150,7 +2150,7 @@
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCodeNerdFontCompleteM-Regular 14</string>
+			<string>OperatorMonoSSmLig-Book 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Open Toolbelt</key>
