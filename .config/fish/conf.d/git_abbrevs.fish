@@ -109,6 +109,8 @@ if command -q git
     # Remote (gr)
     abbr -a -g gr       git remote -vv
     abbr -a -g gra      git remote add
+    abbr -a -g grao     git remote add origin
+    abbr -a -g grau     git remote add upstream
     abbr -a -g grmv     git remote rename
     abbr -a -g grrm     git remote remove
     abbr -a -g grup     git remote update
