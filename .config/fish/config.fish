@@ -78,3 +78,8 @@ end
 ## GPG
 export GPG_TTY=(tty)
 
+# Zoxide
+if command -q zoxide
+ zoxide init fish | source
+end
+
