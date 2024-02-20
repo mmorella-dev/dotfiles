@@ -24,7 +24,7 @@ set fish_color_match --background brblue
 # Homebrew init
 # =============
 if test -e /opt/homebrew/bin/brew
-  eval "$(/opt/homebrew/bin/brew shellenv)"
+  eval (/opt/homebrew/bin/brew shellenv)
 end
 
 # iTerm2 Shell Integrations
@@ -76,4 +76,5 @@ if test -e /opt/homebrew/Caskroom/miniconda/base/bin/conda
 end
 
 ## GPG
-export GPG_TTY=$(tty)
+export GPG_TTY=(tty)
+
