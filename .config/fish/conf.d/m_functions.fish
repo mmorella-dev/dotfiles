@@ -11,6 +11,15 @@ end
 # My functions
 ##############
 
+# Inspired by https://github.com/mathiasbynens/dotfiles/blob/main/.functions#L155
+function o --desc="'o' with no arguments opens the current directory." --wraps=open
+    if test -z $argv
+        command open .
+    else
+        command open $argv
+    end
+end
+
 function mkd -w "mkdir" -d "Make directory and cd into it."
     mkdir -p $argv; and cd $argv[-1]
 end
@@ -18,14 +27,6 @@ end
 # On WSL systems, alias "open" to use explorer.exe
 if __is_wsl
     alias open="explorer.exe"
-end
-
-function o --w open --d 'shorthand for open. if no args, opens current dir.'
-    if test (count $argv) -gt 0
-        open $argv
-    else
-        open .
-    end
 end
 
 
@@ -41,11 +42,9 @@ function dataurl -d "Generate a base64 dataurl for a file."
 end
 
 # reload shell (i.e. invoke as login shell)
-function reload -w "$SHELL" -d "Reload shell (invoke as new login shell)"
-    exec $SHELL -l
-end
+alias reload "exec $SHELL -l"
 
-
+# Pretty 'tree' with sensible defaults
 function tre -w "tree" -d "Pretty 'tree' with sensible defaults."
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst $argv | less -FRNX
 end
@@ -106,3 +105,9 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 alias mergepdf='gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.pdf'
 
 alias c="tr -d '\n' | pbcopy"
+
+alias stfu "osascript -e 'set volume output muted true'"
+alias pumpitup "osascript -e 'set volume output volume 100'"
+alias afk "pmset displaysleepnow"
+# Get week number
+alias week='date +%V'
