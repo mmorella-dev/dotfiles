@@ -1,3 +1,5 @@
+return 0
+
 # git abbreviations
 # based on jhillyerd/plugin-git
 
