@@ -11,9 +11,6 @@ CVS
 _darcs
 \.hg
 
-\.git
-\.gitignore
-
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
 
@@ -22,4 +19,3 @@ _darcs
 ^/COPYING
 
 .DS_Store
-^/etc
