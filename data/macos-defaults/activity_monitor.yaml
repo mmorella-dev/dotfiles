@@ -2,7 +2,12 @@
 description: Activity Monitor
 data:
   com.apple.ActivityMonitor:
+    # Show main window when launching
     OpenMainWindow: true
+
+    # Show all categories
     ShowCategory: 0
+    
+    # Sort results by CPU usage, descending
     SortColumn: CPUUsage
     SortDirection: 0

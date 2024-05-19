@@ -1,5 +1,6 @@
 ---
 description: Globals
+kill: ["Dock"]
 data:
   NSGlobalDomain:
     # Disable the over-the-top focus ring animation
@@ -9,16 +10,16 @@ data:
     AppleInterfaceStyleSwitchesAutomatically: false
 
     # Always show scrollbars
-    AppleShowScrollBars: Always
+    # AppleShowScrollBars: Always
 
     # Disable animations when opening and closing windows.
-    NSAutomaticWindowAnimationsEnabled: false
+    # NSAutomaticWindowAnimationsEnabled: false
 
     # Increase window resize speed for Cocoa applications
     NSWindowResizeTime: 0.001
 
     # Disable animations when opening a Quick Look window.
-    QLPanelAnimationDuration: 0
+    # QLPanelAnimationDuration: 0
 
     # Expanding the save & print panels by default.
     NSNavPanelExpandedStateForSaveMode: true
@@ -50,10 +51,6 @@ data:
     # Turn off auto-termination
     NSDisableAutomaticTermination: true
 
-  com.apple.LaunchServices:
-    # Disable the "Are you sure you want to open this application?” dialog
-    LSQuarantine: false
-
   com.apple.CrashReporter:
     # Disable the crash reporter
     DialogType: none
@@ -62,20 +59,9 @@ data:
     # Set Help Viewer windows to non-floating mode
     DevMode: true
 
-  com.apple.dashboard:
-    # Completely Disable Dashboard
-    mcx-disabled: true
-
-    # Dashboard: "Off"
-    dashboard-enabled-state: 1
-
   com.apple.print.PrintingPrefs:
     # Automatically quit printer app once the print jobs complete.
     "Quit When Finished": true
-
-  # Avoid creation of .DS_Store files on network volumes.
-  # com.apple.desktopservices:
-  #   DSDontWriteNetworkStores: true
 
   com.apple.NetworkBrowser:
     # Enable AirDrop over Ethernet
@@ -86,3 +72,13 @@ data:
     skip-verify: true
     skip-verify-locked: true
     skip-verify-remote: true
+
+
+  com.apple.systempreferences:
+    # Disable Resume system-wide
+    NSQuitAlwaysKeepsWindows: false
+      
+  # Disable "reopen windows when logging back in"
+  # This works, although the checkbox will still appear to be checked.
+  com.apple.loginwindow:
+    TALLogoutSavesState: false

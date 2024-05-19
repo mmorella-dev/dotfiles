@@ -50,10 +50,10 @@ data:
     "TimeZone support enabled": true
 
     # Show events in year view
-    "Show heat map in Year View": false
+    "Show heat map in Year View": true
 
     # Show week numbers
-    "Show Week Numbers": false
+    "Show Week Numbers": true
 
     # Open events in new windows
     OpenEventsInWindowType: false

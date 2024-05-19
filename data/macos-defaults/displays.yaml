@@ -10,7 +10,7 @@ data:
     DisplayResolutionEnabled: true
 
   # Disable automatically adjust brightness
-  /Library/Preferences/com.apple.iokit.AmbientLightSensor.plist:
-    "Automatic Display Enabled": false
+  # /Library/Preferences/com.apple.iokit.AmbientLightSensor.plist:
+  #   "Automatic Display Enabled": false
 
 sudo: true

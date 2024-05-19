@@ -1,26 +1,37 @@
 ---
 description: Dock
+kill: ["Dock"]
+
 data:
   com.apple.dock:
     # Turn off Spaces auto-switching
-    workspaces-auto-swoosh: false
+    # workspaces-auto-swoosh: false
 
     # Show only open applications in the Dock
-    static-only: true
+    static-only: false
 
     # Wipe all (default) app icons from the Dock.
-    persistent-apps: []
+    # persistent-apps: []
 
     # Don’t show recent applications in Dock
     show-recents: false
 
     # Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate
-    tilesize: 36
+    tilesize: 48
 
     # Set Dock to auto-hide and remove the auto-hiding delay.
-    autohide: true
+    autohide: false
     autohide-delay: 0
     autohide-time-modifier: 0
+
+    # Set Dock minimize animation to scale
+    mineffect: "scale"
+    
+    # Minimize windows into their application’s icon.
+    minimize-to-application: true
+
+    # Enable highlight hover effect for the grid view of a stack.
+    mouse-over-hilite-stack: true
 
     # Hot corners
     # Possible values:
@@ -36,12 +47,12 @@ data:
     # 12: Notification Center
     # 13: Lock Screen
 
-    # Top left screen corner
-    wvous-tl-corner: 0
+    # Top left screen corner: Mission control
+    wvous-tl-corner: 2
     wvous-tl-modifier: 0
 
-    # Top right screen corner
-    wvous-tr-corner: 0
+    # Top right screen corner: Mission control
+    wvous-tr-corner: 2
     wvous-tr-modifier: 0
 
     # Bottom left screen corner

@@ -1,16 +1,20 @@
 ---
 description: Finder
+kill: ["Finder"]
 data:
   com.apple.desktopservices:
     # Force the Finder to gather all metadata first
     UseBareEnumeration: true
 
     # Avoid creation of .DS_Store files on network volumes.
-    # DSDontWriteNetworkStores: true
+    DSDontWriteNetworkStores: true
+
+    # Avoid creation of .DS_Store files on USB devices
+    DSDontWriteUSBStores: true
 
   com.apple.finder:
     # Disable Finder animations.
-    DisableAllAnimations: true
+    # DisableAllAnimations: true
 
     # Finder > Preferences > Show warning before changing an extension
     FXEnableExtensionChangeWarning: false
@@ -24,8 +28,8 @@ data:
     # Show icons for hard drives, servers, and removable media on the desktop.
     ShowExternalHardDrivesOnDesktop: true
     ShowRemovableMediaOnDesktop: true
-    ShowHardDrivesOnDesktop: false
-    ShowMountedServersOnDesktop: false
+    ShowHardDrivesOnDesktop: true
+    ShowMountedServersOnDesktop: true
 
     # Set ~ as the default location for new Finder windows
     NewWindowTarget: PfHm
@@ -40,40 +44,40 @@ data:
       - OpenWith: true
       - Privileges: true
 
-    # Sort folders on top
-    _FXSortFoldersFirst: false
+    # Always sort folders on top
+    _FXSortFoldersFirst: true
 
     # Disable sidebar: Recent Tags
     ShowRecentTags: false
 
     # Open folders in new Finder windows instead of tabs
-    FinderSpawnTab: false
-
-    # Sort icon views by name, show item info and minimize grid spacing in icon views.
+    # FinderSpawnTab: false
+  
     DesktopViewSettings:
       IconViewSettings:
-        arrangeBy: "name"
-        gridSpacing: 1.0
-        iconSize: 64.0
+        arrangeBy: "kind"
+        gridSpacing: 100.0
+        iconSize: 80.0
+        labelOnBottom: false # item info on right
         showItemInfo: true
-
+        ...: {}
     FK_StandardViewSettings:
       IconViewSettings:
-        arrangeBy: "name"
-        gridSpacing: 1.0
-        iconSize: 64.0
+        arrangeBy: "grid"
+        gridSpacing: 100
+        iconSize: 80
         showItemInfo: true
-
+        ...: {}
     StandardViewSettings:
       IconViewSettings:
-        arrangeBy: "name"
-        gridSpacing: 1.0
-        iconSize: 64.0
+        arrangeBy: "grid"
+        gridSpacing: 100
+        iconSize: 80
         showItemInfo: true
+        ...: {}
 
   com.apple.screencapture:
     # Set the screenshot location:
-    location: "~/Library/Mobile Documents/com~apple~CloudDocs/Screenshots"
-
-    # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-    type: png
+    location: "~/Pictures/Screenshots/"
+    # Disable drop shadow in window screenshots
+    disable-shadow: true

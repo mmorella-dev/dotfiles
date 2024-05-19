@@ -1,0 +1,9 @@
+---
+description: Trackpad Currenthost
+kill: ["cfprefsd"]
+current_host: true
+data: 
+  # Enable corner right click
+  NSGlobalDomain:
+    com.apple.trackpad.trackpadCornerClickBehavior: 1
+    com.apple.trackpad.enableSecondaryClick: true

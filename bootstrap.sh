@@ -23,3 +23,6 @@ cd ~/.dotfiles
 
 # Stow dotfiles into home dir
 stow -S --target=~/ home
+
+# Apply macos defaults script
+macos-defaults apply -vv ~/.dotfiles/data/macos-defaults/

@@ -63,7 +63,7 @@ data:
 
     # Set Safari’s home page to the favorites page.
     # HomePage -string "favorites://"
-    HomePage: "https://sully.org/dan/start/"
+    # HomePage: "https://sully.org/dan/start/"
 
     # New windows open with: "Homepage"
     NewWindowBehavior: 0
@@ -86,8 +86,8 @@ data:
     # Disable Enable Quick Website Search
     WebsiteSpecificSearchEnabled: false
 
-    # Disable Warn when visiting a fraudulent website
-    WarnAboutFraudulentWebsites: false
+    # Warn when visiting a fraudulent website
+    WarnAboutFraudulentWebsites: true
 
     # Prevent Safari from opening ‘safe’ files automatically after downloading
     AutoOpenSafeDownloads: false
