@@ -2986,7 +2986,7 @@
 	<key>MaxVertically</key>
 	<true/>
 	<key>NeverWarnAboutMeta</key>
-	<true/>
+	<false/>
 	<key>NeverWarnAboutMeta_selection</key>
 	<integer>0</integer>
 	<key>New Bookmarks</key>
