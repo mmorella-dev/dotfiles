@@ -1,0 +1,6 @@
+description: iTerm2
+kill: ["iTerm2"]
+data:
+  com.googlecode.iterm2:
+    LoadPrefsFromCustomFolder: true
+    PrefsCustomFolder: "~/.dotfiles/data/iterm2/"
