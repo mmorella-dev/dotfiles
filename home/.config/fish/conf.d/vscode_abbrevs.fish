@@ -1,10 +1,10 @@
 # vscode abbreviations
 # based on robbyrussel's vscode plugin for oh-my-zsh
 if not test -n "$VSCODE"
-    if command -q codium
-        set VSCODE codium
-    else if command -q code
+    if command -q code
         set VSCODE code
+    else if command -q code
+        set VSCODE codium
     else if command -q code-insiders
         set VSCODE code-insiders
     end
