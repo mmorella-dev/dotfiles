@@ -10,6 +10,6 @@ function curb --desc "Curl and write to a file named after the last segment of t
         echo "Error: a file at $path already exists."
         return 1
     end
-    echo curl --output=$path $argv
+    curl --output $path $argv
     return $status
 end
