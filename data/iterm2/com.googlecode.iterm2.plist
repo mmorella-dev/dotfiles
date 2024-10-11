@@ -3907,7 +3907,7 @@
 			<key>Transparency</key>
 			<real>0.077368683510638206</real>
 			<key>Unicode Version</key>
-			<integer>9</integer>
+			<integer>8</integer>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -4166,7 +4166,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>ssh mm@mae-server.internal</string>
+			<string>ssh mm@192.168.0.203</string>
 			<key>Cursor Boost</key>
 			<real>0.0</real>
 			<key>Cursor Color</key>
