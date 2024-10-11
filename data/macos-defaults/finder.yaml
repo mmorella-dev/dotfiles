@@ -52,6 +52,8 @@ data:
 
     # Open folders in new Finder windows instead of tabs
     # FinderSpawnTab: false
+
+    FK_AppCentricShowSidebar: true
   
     DesktopViewSettings:
       IconViewSettings:
@@ -60,21 +62,18 @@ data:
         iconSize: 80.0
         labelOnBottom: false # item info on right
         showItemInfo: true
-        ...: {}
     FK_StandardViewSettings:
       IconViewSettings:
         arrangeBy: "grid"
         gridSpacing: 100
         iconSize: 80
         showItemInfo: true
-        ...: {}
     StandardViewSettings:
       IconViewSettings:
         arrangeBy: "grid"
         gridSpacing: 100
         iconSize: 80
         showItemInfo: true
-        ...: {}
 
   com.apple.screencapture:
     # Set the screenshot location:
